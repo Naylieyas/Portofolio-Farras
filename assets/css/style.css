@@ -1,40 +1,30 @@
-/* Import Font dengan Karakter Bold & Kaku */
 @import url('https://googleapis.com');
 
 :root {
-    --bg-main: #f4f1ea;        /* Warna latar belakang koran tua / vintage */
-    --accent-yellow: #ffde4d;   /* Warna kuning stabilo khas brutalism */
-    --accent-cyan: #4deeea;     /* Warna cyan kontras */
-    --accent-purple: #b57cff;   /* Warna ungu pop */
-    --text-dark: #000000;
-    --text-light: #ffffff;
-    --border-thick: 4px solid #000000;
-    --border-thin: 2px solid #000000;
-    --hard-shadow: 6px 6px 0px #000000;
-    --hard-shadow-sm: 4px 4px 0px #000000;
-    --hard-shadow-active: 1px 1px 0px #000000;
+    --bg-main: #0B0F19;        /* 🌌 Hitam Navy Gelap */
+    --accent-yellow: #B57CFF;   /* ⚡ Electric Purple */
+    --accent-cyan: #00F5D4;     /* 🟢 Neon Mint */
+    --accent-purple: #FF007F;   /* 💖 Hot Pink Pop */
+    --text-dark: #0B0F19;       
+    --text-light: #FFFFFF;      /* Teks jadi putih */
+    --border-thick: 4px solid #FFFFFF; /* Border berubah jadi putih kontras */
+    --border-thin: 2px solid #FFFFFF;
+    --hard-shadow: 6px 6px 0px #00F5D4; /* Bayangan menyala Neon Mint */
+    --hard-shadow-sm: 4px 4px 0px #FF007F;
+    --hard-shadow-active: 1px 1px 0px #FFFFFF;
 }
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Public Sans', sans-serif;
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Public Sans', sans-serif; }
+
+body { 
+    background-color: var(--bg-main); 
+    color: var(--text-light);   
+    overflow-x: hidden; 
+    line-height: 1.6; 
 }
 
-body {
-    background-color: var(--bg-main);
-    color: var(--text-dark);
-    overflow-x: hidden;
-    line-height: 1.6;
-}
+h1, h2, h3, .logo { font-family: 'Lexend Mega', sans-serif; font-weight: 900; text-transform: uppercase; letter-spacing: -1px; }
 
-h1, h2, h3, .logo {
-    font-family: 'Lexend Mega', sans-serif;
-    font-weight: 900;
-    text-transform: uppercase;
-    letter-spacing: -1px;
-}
 
 /* --- REUSABLE UTILITIES --- */
 .container {
