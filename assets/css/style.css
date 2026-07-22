@@ -14,7 +14,7 @@
     --hard-shadow-active: 1px 1px 0px #FFFFFF;
 }
 
-* { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Public Sans', sans-serif; }
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Space Mono', monospace; }
 
 body { 
     background-color: var(--bg-main); 
@@ -23,8 +23,7 @@ body {
     line-height: 1.6; 
 }
 
-h1, h2, h3, .logo { font-family: 'Lexend Mega', sans-serif; font-weight: 900; text-transform: uppercase; letter-spacing: -1px; }
-
+h1, h2, h3, .logo { font-family: 'Space Grotesk', sans-serif; font-weight: 900; text-transform: uppercase; letter-spacing: -1px; }
 
 /* --- REUSABLE UTILITIES --- */
 .container {
