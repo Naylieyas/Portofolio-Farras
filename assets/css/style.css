@@ -7,17 +7,19 @@
     --accent-purple: #FF007F;   /* 💖 Hot Pink Pop */
     --text-dark: #0B0F19;       
     --text-light: #FFFFFF;      /* Teks jadi putih */
-    --border-thick: 4px solid #FFFFFF; /* Border berubah jadi putih kontras */
-    --border-thin: 2px solid #FFFFFF;
-    --hard-shadow: 6px 6px 0px #00F5D4; /* Bayangan menyala Neon Mint */
-    --hard-shadow-sm: 4px 4px 0px #FF007F;
-    --hard-shadow-active: 1px 1px 0px #FFFFFF;
+    --border-thick: 6px solid #FFFFFF;    /* ⚪ Ditandalkan dari 4px ke 6px */
+    --border-thin: 3px solid #FFFFFF;     /* Dari 2px ke 3px */
+    --hard-shadow: 12px 12px 0px #00F5D4; /* 💥 DIKALI LIPATKAN! Dari 6px ke 12px agar sangat pop-out */
+    --hard-shadow-sm: 8px 8px 0px #FF007F;/* Dari 4px ke 8px */
 }
 
 * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Space Mono', monospace; }
 
 body { 
     background-color: var(--bg-main); 
+    /* 🌐 ELEMEN BARU: Efek Tekstur Titik-titik Retro Cyber */
+    background-image: radial-gradient(rgba(255, 255, 255, 0.15) 1.5px, transparent 1.5px);
+    background-size: 24px 24px;
     color: var(--text-light);   
     overflow-x: hidden; 
     line-height: 1.6; 
@@ -104,18 +106,20 @@ header {
 
 .nav-links a {
     text-decoration: none;
-    color: var(--text-dark);
+    color: var(--text-light);
     font-weight: 800;
     text-transform: uppercase;
     padding: 8px 16px;
-    border: 2px solid transparent;
-    transition: all 0.1s ease;
+    border: 3px solid transparent;
+    transition: all 0.15s cubic-bezier(0.175, 0.885, 0.32, 1.275); /* Efek pegas bouncy */
 }
 
 .nav-links a:hover, .nav-links a.active {
-    background: var(--accent-yellow);
+    background: var(--accent-cyan);
+    color: var(--text-dark);
     border: var(--border-thin);
     box-shadow: var(--hard-shadow-sm);
+    transform: translate(-4px, -4px); /* Efek terangkat ke atas kiri */
 }
 
 .hamburger {
