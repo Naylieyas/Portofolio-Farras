@@ -34,7 +34,7 @@ h1, h2, h3, .logo { font-family: 'Lexend Mega', sans-serif; font-weight: 900; te
 }
 
 .neo-box {
-    background: var(--text-light);
+    background: #131926;  /* 🟢 Sudah diganti jadi gelap agar teks putih kelihatan */
     border: var(--border-thick);
     box-shadow: var(--hard-shadow);
     padding: 30px;
@@ -72,12 +72,12 @@ h1, h2, h3, .logo { font-family: 'Lexend Mega', sans-serif; font-weight: 900; te
 .neo-btn.purple { background: var(--accent-purple); }
 
 /* --- NAVBAR STYLING --- */
-header {
-    background: var(--text-light);
-    border-bottom: var(--border-thick);
-    position: sticky;
-    top: 0;
-    z-index: 999;
+header { 
+    background: var(--bg-main); 
+    border-bottom: var(--border-thick); 
+    position: sticky; 
+    top: 0; 
+    z-index: 999; 
 }
 
 .navbar {
