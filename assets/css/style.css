@@ -199,7 +199,7 @@ footer {
     gap: 30px;
     margin-top: 40px;
 }
-.skill-card { background: var(--text-light); text-align: center; }
+.skill-card { background: transparent; text-align: center; }
 .skill-card .icon { font-size: 3rem; margin-bottom: 15px; display: inline-block; padding: 10px; border: var(--border-thin); background: var(--bg-main);}
 .progress-bar-container { background: #000; height: 24px; border: var(--border-thin); margin-top: 15px; position: relative; }
 .progress-bar { background: var(--accent-cyan); height: 100%; width: 0%; transition: width 1s cubic-bezier(0.1, 1, 0.1, 1); }
