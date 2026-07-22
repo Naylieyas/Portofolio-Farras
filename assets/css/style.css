@@ -123,12 +123,12 @@ header {
 }
 
 .hamburger {
-    display: none;
-    cursor: pointer;
-    background: var(--accent-cyan);
-    border: var(--border-thin);
-    padding: 10px;
-    box-shadow: var(--hard-shadow-sm);
+  display: block; /* UBAH DARI none MENJADI block */
+  cursor: pointer;
+  background: var(--accent-cyan);
+  border: var(--border-thin);
+  padding: 10px;
+  box-shadow: var(--hard-shadow-sm);
 }
 
 .hamburger span {
