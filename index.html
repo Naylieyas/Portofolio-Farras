@@ -7,8 +7,25 @@
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-    <!-- Masukkan Elemen Navbar Global di sini -->
 
+    <!-- NAVBAR GLOBAL -->
+    <header>
+        <div class="container navbar">
+            <div class="logo"><a href="index.html">FARRAS.</a></div>
+            <button class="hamburger" aria-label="Menu">
+                <span></span><span></span><span></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- KONTEN UTAMA HALAMAN INDEX -->
     <main class="container">
         <section class="hero neo-box" style="background: var(--accent-yellow);">
             <h1>Halo, Saya Farras</h1>
@@ -34,6 +51,19 @@
         </section>
     </main>
 
-    <!-- Masukkan Elemen Footer Global di sini -->
+    <!-- FOOTER GLOBAL -->
+    <footer>
+        <div class="container footer-content">
+            <p>&copy; 2026 Farras. All Rights Reserved.</p>
+            <div class="footer-socials">
+                <a href="https://github.com" target="_blank">GitHub</a>
+                <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+                <a href="https://instagram.com" target="_blank">Instagram</a>
+            </div>
+        </div>
+    </footer>
+    <button id="backToTop" class="neo-btn purple">↑ Top</button>
+    <script src="assets/js/script.js"></script>
+
 </body>
 </html>
