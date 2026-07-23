@@ -331,3 +331,31 @@ footer {
 .form-group textarea::placeholder {
   color: rgba(255, 255, 255, 0.4) !important;
 }
+
+/* =======================================================
+   PERBAIKAN KHUSUS KARTU SKILLS & PROGRESS BAR
+   ======================================================= */
+
+/* 1. Mengembalikan latar belakang kotak skill menjadi gelap premium */
+.skills-grid .neo-box,
+.skill-card {
+  background: #131926 !important;
+  border: var(--border-thick) !important;
+}
+
+/* 2. Memaksa judul teks skill (HTML & CSS, JS, dll) berwarna putih terang */
+.skills-grid h3,
+.skill-card h3,
+.skill-card span {
+  color: var(--text-light) !important;
+  display: block !important;
+  margin-bottom: 10px;
+}
+
+/* 3. Merapikan wadah hitam di ujung progress bar agar tetap solid */
+.progress-bar-container {
+  background: #000000 !important;
+  border: var(--border-thin) !important;
+  border-radius: 4px;
+  overflow: hidden;
+}
