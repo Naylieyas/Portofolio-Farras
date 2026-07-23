@@ -1,16 +1,22 @@
 @import url('https://googleapis.com');
 
 :root {
-    --bg-main: #0B0F19;        /* 🌌 Hitam Navy Gelap */
-    --accent-yellow: #B57CFF;   /* ⚡ Electric Purple */
-    --accent-cyan: #00F5D4;     /* 🟢 Neon Mint */
-    --accent-purple: #FF007F;   /* 💖 Hot Pink Pop */
-    --text-dark: #0B0F19;       
-    --text-light: #FFFFFF;      /* Teks jadi putih */
-    --border-thick: 6px solid #FFFFFF;    /* ⚪ Ditandalkan dari 4px ke 6px */
-    --border-thin: 3px solid #FFFFFF;     /* Dari 2px ke 3px */
-    --hard-shadow: 12px 12px 0px #00F5D4; /* 💥 DIKALI LIPATKAN! Dari 6px ke 12px agar sangat pop-out */
-    --hard-shadow-sm: 8px 8px 0px #FF007F;/* Dari 4px ke 8px */
+  --bg-main: #0B0F19;      /* Hitam Navy Gelap */
+  --accent-yellow: #B57CFF; /* Electric Purple */
+  --accent-cyan: #00F5D4;   /* Neon Mint */
+  --accent-purple: #FF007F; /* Hot Pink Pop */
+  --text-dark: #0B0F19;
+  --text-light: #FFFFFF;    /* Teks jadi putih */
+  
+  /* SENTUHAN MODERN: Garis dibuat sedikit lebih proporsional */
+  --border-thick: 4px solid #FFFFFF; 
+  --border-thin: 2px solid #FFFFFF; 
+  --radius-modern: 12px;    /* Efek sudut melengkung modern */
+
+  /* EFEK 3D POP-OUT: Bayangan hitam pekat dengan arah tegas */
+  --hard-shadow: 6px 6px 0px #000000;
+  --hard-shadow-sm: 4px 4px 0px #000000;
+  --hard-shadow-active: 0px 0px 0px #000000; /* Saat ditekan bayangan hilang */
 }
 
 * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Space Mono', monospace; }
@@ -35,38 +41,40 @@ h1, h2, h3, .logo { font-family: 'Space Grotesk', sans-serif; font-weight: 900; 
 }
 
 .neo-box {
-    background: #131926;  /* 🟢 Sudah diganti jadi gelap agar teks putih kelihatan */
-    border: var(--border-thick);
-    box-shadow: var(--hard-shadow);
-    padding: 30px;
-    margin-bottom: 40px;
-    transition: all 0.2s ease;
+  background: #131926; 
+  border: var(--border-thick);
+  box-shadow: var(--hard-shadow);
+  border-radius: var(--radius-modern); /* MENJADI LEBIH MODERN */
+  padding: 30px;
+  margin-bottom: 40px;
+  transition: all 0.2s ease;
 }
 
 .neo-btn {
-    display: inline-block;
-    padding: 12px 24px;
-    font-family: 'Lexend Mega', sans-serif;
-    font-size: 0.9rem;
-    font-weight: 700;
-    text-transform: uppercase;
-    text-decoration: none;
-    color: var(--text-dark);
-    background: var(--accent-yellow);
-    border: var(--border-thick);
-    box-shadow: var(--hard-shadow-sm);
-    cursor: pointer;
-    transition: all 0.1s ease;
+  display: inline-block;
+  padding: 12px 24px;
+  font-family: 'Lexend Mega', sans-serif;
+  font-size: 0.9rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--text-dark);
+  background: var(--accent-yellow);
+  border: var(--border-thick);
+  box-shadow: var(--hard-shadow-sm);
+  border-radius: 8px; /* Sudut tombol melengkung estetik */
+  cursor: pointer;
+  transition: all 0.15s cubic-bezier(0.4, 0, 0.2, 1); /* Efek gerak lebih organik */
 }
 
 .neo-btn:hover {
-    transform: translate(-2px, -2px);
-    box-shadow: 6px 6px 0px #000000;
+  transform: translate(-3px, -3px); /* Naik sedikit ke atas-kiri */
+  box-shadow: 7px 7px 0px #000000;  /* Bayangan menebal */
 }
 
 .neo-btn:active {
-    transform: translate(4px, 4px);
-    box-shadow: var(--hard-shadow-active);
+  transform: translate(4px, 4px);   /* Amblas pas sejajar bayangan */
+  box-shadow: var(--hard-shadow-active); /* Bayangan hilang karena menempel lantai */
 }
 
 .neo-btn.cyan { background: var(--accent-cyan); }
