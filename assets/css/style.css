@@ -306,3 +306,28 @@ footer {
   color: var(--text-dark); /* Mengubah semua teks deskripsi skill di dalam kotak warna menjadi hitam agar kontras */
 }
   
+/* =======================================================
+   PERBAIKAN GLOBAL WARNA TEKS (ABOUT, PROJECTS, CONTACT)
+   ======================================================= */
+
+/* 1. Memaksa semua teks paragraf di dalam kotak gelap menjadi putih */
+.neo-box p, 
+.timeline-item,
+.project-card p,
+.form-group label {
+  color: var(--text-light) !important;
+}
+
+/* 2. Merapikan tampilan teks formulir kontak agar kontras */
+.form-group input, 
+.form-group textarea {
+  background-color: #131926 !important; /* Latar belakang input abu gelap premium */
+  color: var(--text-light) !important;       /* Warna teks ketikan menjadi putih */
+  border: var(--border-thin) !important;     /* Garis tepi putih tegas */
+}
+
+/* 3. Mengatur warna teks placeholder (tulisan samar sebelum mengetik) */
+.form-group input::placeholder, 
+.form-group textarea::placeholder {
+  color: rgba(255, 255, 255, 0.4) !important;
+}
