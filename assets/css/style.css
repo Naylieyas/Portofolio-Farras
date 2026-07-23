@@ -22,16 +22,17 @@
   --hard-shadow-active: 0px 0px 0px rgba(0, 0, 0, 0);
 }
 
-* { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Space Mono', monospace; }
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Space Mono', monospace; }body {
+  
+body {  
+  background-color: var(--bg-main);
+  color: var(--text-light);
+  overflow-x: hidden;
+  line-height: 1.6;
 
-body { 
-    background-color: var(--bg-main); 
-    /* 🌐 ELEMEN BARU: Efek Tekstur Titik-titik Retro Cyber */
-    background-image: radial-gradient(rgba(255, 255, 255, 0.15) 1.5px, transparent 1.5px);
-    background-size: 24px 24px;
-    color: var(--text-light);   
-    overflow-x: hidden; 
-    line-height: 1.6; 
+  /* TAMBAHKAN DUA BARIS INI UNTUK HIASAN TITIK-TITIK */
+  background-image: radial-gradient(rgba(255, 255, 255, 0.07) 1.5px, transparent 1.5px);
+  background-size: 24px 24px;
 }
 
 h1, h2, h3, .logo { font-family: 'Space Grotesk', sans-serif; font-weight: 900; text-transform: uppercase; letter-spacing: -1px; }
@@ -263,3 +264,21 @@ footer {
   .nav-links a { display: block; padding: 20px; border-bottom: var(--border-thin); color: #ffffff !important; }
   .contact-wrapper { grid-template-columns: 1fr; }
 }
+
+.neo-box {
+  position: relative; /* Memastikan hiasan tidak keluar dari kotak */
+}
+
+/* Membuat hiasan lingkaran kecil bergaya tombol jendela mac/retro di pojok kanan atas kotak */
+.neo-box::before {
+  content: "";
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  width: 10px;
+  height: 10px;
+  background: var(--accent-cyan);
+  border-radius: 50%;
+  box-shadow: -15px 0 0 var(--accent-purple), -30px 0 0 var(--accent-yellow);
+}
+  
