@@ -35,7 +35,13 @@ body {
   background-size: 24px 24px;
 }
 
-h1, h2, h3, .logo { font-family: 'Space Grotesk', sans-serif; font-weight: 900; text-transform: uppercase; letter-spacing: -1px; }
+h1, h2, h3, .logo { 
+  font-family: 'Space Grotesk', sans-serif; 
+  font-weight: 900; 
+  text-transform: uppercase; 
+  letter-spacing: -1px; /* Selesai bawaan Anda */
+  color: var(--text-light); /* TAMBAHKAN BARIS INI */
+}
 
 /* --- REUSABLE UTILITIES --- */
 .container {
@@ -294,5 +300,9 @@ footer {
   box-shadow: var(--hard-shadow-sm);
   transform: rotate(-3px); /* Memberikan efek miring estetik khas brutalism */
   margin-bottom: 20px;
+}
+  
+.skills-grid .neo-box {
+  color: var(--text-dark); /* Mengubah semua teks deskripsi skill di dalam kotak warna menjadi hitam agar kontras */
 }
   
