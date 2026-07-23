@@ -1,22 +1,25 @@
 @import url('https://googleapis.com');
 
 :root {
-  --bg-main: #0B0F19;      /* Hitam Navy Gelap */
-  --accent-yellow: #B57CFF; /* Electric Purple */
-  --accent-cyan: #00F5D4;   /* Neon Mint */
-  --accent-purple: #FF007F; /* Hot Pink Pop */
-  --text-dark: #0B0F19;
-  --text-light: #FFFFFF;    /* Teks jadi putih */
+  /* WARNA UTAMA: Menggunakan warna gelap premium (bukan hitam pekat) */
+  --bg-main: #0B0F17;         /* Deep Slate Blue (Sangat elegan) */
+  --text-light: #F8FAFC;      /* Putih porselen yang lembut di mata */
+  --text-dark: #0F172A;       /* Hitam arang untuk teks di dalam tombol */
   
-  /* SENTUHAN MODERN: Garis dibuat sedikit lebih proporsional */
-  --border-thick: 4px solid #FFFFFF; 
+  /* WARNA AKSEN PASTEL: Mengganti warna neon menjadi warna pastel premium */
+  --accent-yellow: #C0A5FF;   /* Soft Lavender (Ganti dari electric purple) */
+  --accent-cyan: #7EE7D8;     /* Muted Sage Mint (Lebih sejuk dan mewah) */
+  --accent-purple: #FF80B5;   /* Pastel Rose Pink (Elegan, tidak menusuk mata) */
+  
+  /* GARIS & SUDUT: Dibuat lebih tipis dan membulat halus */
+  --border-thick: 3px solid #FFFFFF; 
   --border-thin: 2px solid #FFFFFF; 
-  --radius-modern: 12px;    /* Efek sudut melengkung modern */
+  --radius-modern: 16px;      /* Sudut kotak lebih membulat melengkung */
 
-  /* EFEK 3D POP-OUT: Bayangan hitam pekat dengan arah tegas */
-  --hard-shadow: 6px 6px 0px #000000;
-  --hard-shadow-sm: 4px 4px 0px #000000;
-  --hard-shadow-active: 0px 0px 0px #000000; /* Saat ditekan bayangan hilang */
+  /* BAYANGAN: Ditambahkan sedikit blur agar tidak terlalu kaku/flat */
+  --hard-shadow: 6px 6px 0px rgba(0, 0, 0, 0.8);
+  --hard-shadow-sm: 4px 4px 0px rgba(0, 0, 0, 0.8);
+  --hard-shadow-active: 0px 0px 0px rgba(0, 0, 0, 0);
 }
 
 * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Space Mono', monospace; }
